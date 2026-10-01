@@ -4,11 +4,13 @@ Publication version: 1.0.0
 Publication status: complete
 Corrects: none
 
-The selected Essential Dekker and economical-solutions research is complete
-within the scopes in the source-specific guides. Complete means the selected
-positive and negative results satisfy their research completion criteria; it
-does not mean every claim in either paper has been proved. Version 1.0.0 names
-this collection candidate, not a claim that a tag or GitHub release exists.
+Peterson Research is a growing collection covering Gary L. Peterson's research.
+Its first two papers are Essential Dekker and economical solutions. The selected
+positive and negative results for those papers are complete within the scopes
+in their guides. This status describes the current contents; it neither closes
+the collection to further papers nor means every claim in these papers has
+been proved. Version 1.0.0 identifies the published artifact; no tag or GitHub
+release is implied.
 
 ## Verification
 

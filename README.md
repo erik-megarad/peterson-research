@@ -1,13 +1,25 @@
 # Peterson Research
 
-This collection reconstructs selected shared-memory algorithms from Gary L.
-Peterson's *The Essential Dekker's Algorithm* and Gary L. Peterson and Michael
-J. Fischer's *Economical Solutions for the Critical Section Problem in a
-Distributed System*. Lean checks the encoded proofs. The collection includes
-successful guarantees and counterexamples: a safe algorithm can still leave
-someone waiting forever.
+Peterson Research is a growing collection of Lean formalizations and
+reconstructions of Gary L. Peterson's research. It aims to make the ideas and
+arguments in his papers understandable and inspectable, with explanations
+linked to proofs checked by Lean. Each paper keeps its own source account,
+model assumptions, checked results and open questions.
 
-Start with either reading path:
+Peterson's 1981 mutual-exclusion algorithm has a separate
+[core repository](https://github.com/erik-megarad/peterson-algorithm). It
+contains the completed formalization and explanations for that algorithm. The
+shared Lean root here makes the current collection convenient to build and
+explore; each paper retains its own semantics.
+
+The first two papers are *The Essential Dekker's Algorithm* and, with Michael
+J. Fischer, *Economical Solutions for the Critical Section Problem in a
+Distributed System*. They begin a broader collection; future additions will
+have their own reviewed scope. These first entries include both successful
+guarantees and counterexamples: a safe algorithm can still leave someone
+waiting forever.
+
+Start with either of the first two reading paths:
 
 - [Essential Dekker](docs/essential-dekker.md): repeated two-process safety and
   request service, arbitrarily many finite overtakes, the printed generalization's
@@ -17,8 +29,8 @@ Start with either reading path:
   Algorithm 7 counterexamples; register counts, a failure-model lower bound,
   and initialized solo work.
 
-These are distinct mathematical models. Dekker uses protocol fairness and
-critical completion; economical solutions additionally model automatic reset
+The current papers use distinct mathematical models. Dekker uses protocol
+fairness and critical completion; economical solutions additionally model automatic reset
 and request abortion on failure. Both interleave individual atomic shared
 accesses. Neither establishes weak-memory correctness, an executable
 implementation, or a wall-clock guarantee. The guides put the additional
@@ -32,20 +44,13 @@ qualification. Machine-readable claim records and a file-hash manifest are in
 [corpus/manifest.json](corpus/manifest.json). The [bibliography](corpus/bibliography.bib)
 identifies the sources; their PDFs and transcriptions are not distributed.
 
-The separate [core Peterson repository](https://github.com/erik-megarad/peterson-algorithm)
-contains the completed 1981 algorithm development. This collection does not
-change its theorems or publication. The shared Lean root here is a build and
-navigation convenience, not an assertion that the papers have the same semantics.
-
 ## AI assistance
 
-The formalizations, proof attempts, explanations and publication packet are
-model-generated. Erik Peterson started and directed the project and holds
-applicable rights; that role does not imply human authorship of every sentence
-or independent human mathematical review. Separate AI agents reviewed the
-source/model boundaries and completed proof paths. Lean's kernel checks proof
-terms, not whether a reconstruction faithfully represents a paper. The
-source-specific guides disclose interpretation and version gaps.
+Erik Peterson started and directs the project. Its formalizations, proof
+attempts and explanations are model-generated, with separate AI agents
+reviewing source/model boundaries and completed proof paths. Lean's kernel
+checks proof terms; source faithfulness relies on the documented reviews.
+The source-specific guides disclose interpretation and version gaps.
 
 Project material is offered under the [MIT license](LICENSE) for applicable
 rights. That license does not cover the source papers or fetched dependencies.

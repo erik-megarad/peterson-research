@@ -1,15 +1,15 @@
 {
   "cff-version": "1.2.0",
-  "message": "Cite this model-generated project by the project name below. This is bibliographic credit, not a claim of human authorship.",
-  "title": "Peterson Research: Essential Dekker and Economical Solutions",
+  "message": "Cite this project by the project name below.",
+  "title": "Peterson Research: Lean Formalizations of Gary L. Peterson’s Research",
   "authors": [
     {
-      "name": "Peterson Research Formalization Project (model-generated)"
+      "name": "Erik Peterson"
     }
   ],
   "version": "1.0.0",
   "license": "MIT",
   "type": "software",
-  "abstract": "Model-generated Lean reconstructions of selected results from Gary L. Peterson’s Essential Dekker and Peterson–Fischer’s Economical Solutions. Includes safety, conditional progress, counterexamples, register economy and a scoped lower bound; see the source-specific guides for assumptions and unestablished claims.",
+  "abstract": "A growing collection of model-generated Lean formalizations and reconstructions of Gary L. Peterson’s research. The first two papers are The Essential Dekker’s Algorithm and Peterson–Fischer’s Economical Solutions for the Critical Section Problem in a Distributed System. Source-specific guides explain checked results, counterexamples, assumptions and unestablished claims.",
   "repository-code": "https://github.com/erik-megarad/peterson-research"
 }
