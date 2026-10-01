@@ -1,0 +1,160 @@
+schema_version = 1
+
+[lean]
+build_modules = ["Peterson.EconomicalSolutions.Algorithm13Economy", "Peterson.EconomicalSolutions.Algorithm1Progress", "Peterson.EconomicalSolutions.Algorithm1Safety", "Peterson.EconomicalSolutions.Algorithm2Economy", "Peterson.EconomicalSolutions.Algorithm2Progress", "Peterson.EconomicalSolutions.Algorithm2Refinement", "Peterson.EconomicalSolutions.Algorithm2SoloCount", "Peterson.EconomicalSolutions.Algorithm3Counterexample", "Peterson.EconomicalSolutions.Algorithm5Doorway", "Peterson.EconomicalSolutions.Algorithm5Economy", "Peterson.EconomicalSolutions.Algorithm5Erasure", "Peterson.EconomicalSolutions.Algorithm5FIFO", "Peterson.EconomicalSolutions.Algorithm5Invariant", "Peterson.EconomicalSolutions.Algorithm5Progress", "Peterson.EconomicalSolutions.Algorithm6Doorway", "Peterson.EconomicalSolutions.Algorithm6Economy", "Peterson.EconomicalSolutions.Algorithm6History", "Peterson.EconomicalSolutions.Algorithm6Invariant", "Peterson.EconomicalSolutions.Algorithm6Predecessor", "Peterson.EconomicalSolutions.Algorithm7Counterexample", "Peterson.EconomicalSolutions.Algorithm7Economy", "Peterson.EconomicalSolutions.Algorithm7LevelOne", "Peterson.EconomicalSolutions.Algorithm7Prepublication", "Peterson.EconomicalSolutions.TwoStateBypass", "Peterson.EssentialDekker.CorrectedSafety", "Peterson.EssentialDekker.LiteralObstruction", "Peterson.EssentialDekker.Starvation", "Peterson.EssentialDekker.TwoProcess", "Peterson.EssentialDekker.TwoProcessOvertaking", "Peterson.EssentialDekker.TwoProcessProgressProof"]
+source_paths = ["lakefile.lean", "Peterson/EconomicalSolutions/Algorithm1.lean", "Peterson/EconomicalSolutions/Algorithm13Economy.lean", "Peterson/EconomicalSolutions/Algorithm1Certificate.lean", "Peterson/EconomicalSolutions/Algorithm1Progress.lean", "Peterson/EconomicalSolutions/Algorithm1ProgressCertificate.lean", "Peterson/EconomicalSolutions/Algorithm1ProgressDefs.lean", "Peterson/EconomicalSolutions/Algorithm1Safety.lean", "Peterson/EconomicalSolutions/Algorithm2.lean", "Peterson/EconomicalSolutions/Algorithm2Economy.lean", "Peterson/EconomicalSolutions/Algorithm2Foundation.lean", "Peterson/EconomicalSolutions/Algorithm2History.lean", "Peterson/EconomicalSolutions/Algorithm2Node.lean", "Peterson/EconomicalSolutions/Algorithm2NodeCertificate.lean", "Peterson/EconomicalSolutions/Algorithm2NodeSafety.lean", "Peterson/EconomicalSolutions/Algorithm2Observations.lean", "Peterson/EconomicalSolutions/Algorithm2Progress.lean", "Peterson/EconomicalSolutions/Algorithm2Refinement.lean", "Peterson/EconomicalSolutions/Algorithm2ScanBridge.lean", "Peterson/EconomicalSolutions/Algorithm2Solo.lean", "Peterson/EconomicalSolutions/Algorithm2SoloCount.lean", "Peterson/EconomicalSolutions/Algorithm2Tree.lean", "Peterson/EconomicalSolutions/Algorithm2WellFormed.lean", "Peterson/EconomicalSolutions/Algorithm3.lean", "Peterson/EconomicalSolutions/Algorithm3Certificate.lean", "Peterson/EconomicalSolutions/Algorithm3Counterexample.lean", "Peterson/EconomicalSolutions/Algorithm5.lean", "Peterson/EconomicalSolutions/Algorithm5Capacity.lean", "Peterson/EconomicalSolutions/Algorithm5Doorway.lean", "Peterson/EconomicalSolutions/Algorithm5Economy.lean", "Peterson/EconomicalSolutions/Algorithm5Erasure.lean", "Peterson/EconomicalSolutions/Algorithm5FIFO.lean", "Peterson/EconomicalSolutions/Algorithm5Invariant.lean", "Peterson/EconomicalSolutions/Algorithm5Progress.lean", "Peterson/EconomicalSolutions/Algorithm5Projection.lean", "Peterson/EconomicalSolutions/Algorithm5Sanity.lean", "Peterson/EconomicalSolutions/Algorithm6.lean", "Peterson/EconomicalSolutions/Algorithm6Cohort.lean", "Peterson/EconomicalSolutions/Algorithm6Completion.lean", "Peterson/EconomicalSolutions/Algorithm6Doorway.lean", "Peterson/EconomicalSolutions/Algorithm6Economy.lean", "Peterson/EconomicalSolutions/Algorithm6History.lean", "Peterson/EconomicalSolutions/Algorithm6Invariant.lean", "Peterson/EconomicalSolutions/Algorithm6Joining.lean", "Peterson/EconomicalSolutions/Algorithm6LowerRound.lean", "Peterson/EconomicalSolutions/Algorithm6Observation.lean", "Peterson/EconomicalSolutions/Algorithm6Predecessor.lean", "Peterson/EconomicalSolutions/Algorithm6Progress.lean", "Peterson/EconomicalSolutions/Algorithm6Projection.lean", "Peterson/EconomicalSolutions/Algorithm6Ticking.lean", "Peterson/EconomicalSolutions/Algorithm7.lean", "Peterson/EconomicalSolutions/Algorithm7BuildHistory.lean", "Peterson/EconomicalSolutions/Algorithm7Certificate.lean", "Peterson/EconomicalSolutions/Algorithm7ClockCredit.lean", "Peterson/EconomicalSolutions/Algorithm7Counterexample.lean", "Peterson/EconomicalSolutions/Algorithm7CreditHistory.lean", "Peterson/EconomicalSolutions/Algorithm7Economy.lean", "Peterson/EconomicalSolutions/Algorithm7Episode.lean", "Peterson/EconomicalSolutions/Algorithm7History.lean", "Peterson/EconomicalSolutions/Algorithm7LevelOne.lean", "Peterson/EconomicalSolutions/Algorithm7Prepublication.lean", "Peterson/EconomicalSolutions/Algorithm7Replay.lean", "Peterson/EconomicalSolutions/Algorithm7Safety.lean", "Peterson/EconomicalSolutions/TwoStateBypass.lean", "Peterson/EconomicalSolutions/TwoStateNecessary.lean", "Peterson/EconomicalSolutions/TwoStateScheduling.lean", "Peterson/EssentialDekker/Corrected.lean", "Peterson/EssentialDekker/CorrectedSafety.lean", "Peterson/EssentialDekker/LiteralObstruction.lean", "Peterson/EssentialDekker/Starvation.lean", "Peterson/EssentialDekker/TwoProcess.lean", "Peterson/EssentialDekker/TwoProcessOvertaking.lean", "Peterson/EssentialDekker/TwoProcessProgress.lean", "Peterson/EssentialDekker/TwoProcessProgressProof.lean"]
+
+[[lean.claims]]
+record_id = "dekker-two-safety"
+module = "Peterson.EssentialDekker.TwoProcess"
+declarations = ["Peterson.EssentialDekker.TwoProcess.repeated_mutual_exclusion"]
+
+[[lean.claims]]
+record_id = "dekker-two-progress"
+module = "Peterson.EssentialDekker.TwoProcessProgressProof"
+declarations = ["Peterson.EssentialDekker.TwoProcess.Progress.request_eventually_entry"]
+
+[[lean.claims]]
+record_id = "dekker-overtaking"
+module = "Peterson.EssentialDekker.TwoProcessOvertaking"
+declarations = ["Peterson.EssentialDekker.TwoProcess.Overtaking.arbitrary_finite_overtaking"]
+
+[[lean.claims]]
+record_id = "dekker-literal-obstruction"
+module = "Peterson.EssentialDekker.LiteralObstruction"
+declarations = ["Peterson.EssentialDekker.LiteralObstruction.count_all", "Peterson.EssentialDekker.LiteralObstruction.first_level_test_false", "Peterson.EssentialDekker.LiteralObstruction.inactive_peer_test_false"]
+
+[[lean.claims]]
+record_id = "dekker-corrected-starvation"
+module = "Peterson.EssentialDekker.Starvation"
+declarations = ["Peterson.EssentialDekker.Corrected.Starvation.corrected_progress_counterexample"]
+
+[[lean.claims]]
+record_id = "dekker-corrected-safety"
+module = "Peterson.EssentialDekker.CorrectedSafety"
+declarations = ["Peterson.EssentialDekker.Corrected.Safety.mutual_exclusion", "Peterson.EssentialDekker.Corrected.Safety.run_mutual_exclusion"]
+
+[[lean.claims]]
+record_id = "econ-a1-safety"
+module = "Peterson.EconomicalSolutions.Algorithm1Safety"
+declarations = ["EconomicalSolutions.Algorithm1.mutual_exclusion", "EconomicalSolutions.Algorithm1.finite_execution_mutual_exclusion"]
+
+[[lean.claims]]
+record_id = "econ-a2-safety"
+module = "Peterson.EconomicalSolutions.Algorithm2Refinement"
+declarations = ["EconomicalSolutions.Algorithm2.safety"]
+
+[[lean.claims]]
+record_id = "econ-a5-safety"
+module = "Peterson.EconomicalSolutions.Algorithm5Invariant"
+declarations = ["EconomicalSolutions.Algorithm5.safety"]
+
+[[lean.claims]]
+record_id = "econ-a6-safety"
+module = "Peterson.EconomicalSolutions.Algorithm6Invariant"
+declarations = ["EconomicalSolutions.Algorithm6.safety"]
+
+[[lean.claims]]
+record_id = "econ-a7-safety"
+module = "Peterson.EconomicalSolutions.Algorithm7Prepublication"
+declarations = ["EconomicalSolutions.Algorithm7.PrepublicationHistory.mutual_exclusion", "EconomicalSolutions.Algorithm7.PrepublicationHistory.run_mutual_exclusion"]
+
+[[lean.claims]]
+record_id = "econ-a1-progress"
+module = "Peterson.EconomicalSolutions.Algorithm1Progress"
+declarations = ["EconomicalSolutions.Algorithm1.pending_first_outcome", "EconomicalSolutions.Algorithm1.per_request_progress", "EconomicalSolutions.Algorithm1.deadlock_freedom"]
+
+[[lean.claims]]
+record_id = "econ-a2-progress"
+module = "Peterson.EconomicalSolutions.Algorithm2Progress"
+declarations = ["EconomicalSolutions.Algorithm2.pending_first_outcome", "EconomicalSolutions.Algorithm2.per_request_progress", "EconomicalSolutions.Algorithm2.deadlock_freedom"]
+
+[[lean.claims]]
+record_id = "econ-a5-progress"
+module = "Peterson.EconomicalSolutions.Algorithm5Progress"
+declarations = ["EconomicalSolutions.Algorithm5.pending_first_outcome", "EconomicalSolutions.Algorithm5.surviving_request_enters", "EconomicalSolutions.Algorithm5.deadlock_freedom"]
+
+[[lean.claims]]
+record_id = "econ-a6-progress"
+module = "Peterson.EconomicalSolutions.Algorithm6Predecessor"
+declarations = ["EconomicalSolutions.Algorithm6.pending_first_outcome", "EconomicalSolutions.Algorithm6.pending_surviving_enters", "EconomicalSolutions.Algorithm6.surviving_pending_deadlock_freedom"]
+
+[[lean.claims]]
+record_id = "econ-clock-refutation"
+module = "Peterson.EconomicalSolutions.Algorithm3Counterexample"
+declarations = ["EconomicalSolutions.Algorithm3.Counterexample.fair_non_ticking_lasso", "EconomicalSolutions.Algorithm3.Counterexample.not_universal_next_outcome", "EconomicalSolutions.Algorithm3.Counterexample.not_universal_repeated_ticks"]
+
+[[lean.claims]]
+record_id = "econ-a5-fifo"
+module = "Peterson.EconomicalSolutions.Algorithm5FIFO"
+declarations = ["EconomicalSolutions.Algorithm5.finite_prefix_fifo", "EconomicalSolutions.Algorithm5.fifo_entry_order"]
+
+[[lean.claims]]
+record_id = "econ-a6-fifo"
+module = "Peterson.EconomicalSolutions.Algorithm6History"
+declarations = ["EconomicalSolutions.Algorithm6.finite_prefix_fifo_original_episode"]
+
+[[lean.claims]]
+record_id = "econ-a5-doorway"
+module = "Peterson.EconomicalSolutions.Algorithm5Doorway"
+declarations = ["EconomicalSolutions.Algorithm5.doorway_first_outcome", "EconomicalSolutions.Algorithm5.doorway_surviving_enqueues"]
+
+[[lean.claims]]
+record_id = "econ-a6-doorway"
+module = "Peterson.EconomicalSolutions.Algorithm6Doorway"
+declarations = ["EconomicalSolutions.Algorithm6.doorway_first_outcome", "EconomicalSolutions.Algorithm6.doorway_surviving_enqueues"]
+
+[[lean.claims]]
+record_id = "econ-a7-fifo-refutation"
+module = "Peterson.EconomicalSolutions.Algorithm7Counterexample"
+declarations = ["EconomicalSolutions.Algorithm7.Counterexample.publication_reversal", "EconomicalSolutions.Algorithm7.Counterexample.not_universal_publication_fifo"]
+
+[[lean.claims]]
+record_id = "econ-a7-progress-refutation"
+module = "Peterson.EconomicalSolutions.Algorithm7LevelOne"
+declarations = ["EconomicalSolutions.Algorithm7.LevelOneCounterexample.level_one_starvation", "EconomicalSolutions.Algorithm7.LevelOneCounterexample.not_level_one_completion_or_failure", "EconomicalSolutions.Algorithm7.LevelOneCounterexample.original_requests", "EconomicalSolutions.Algorithm7.LevelOneCounterexample.no_original_outcomes"]
+
+[[lean.claims]]
+record_id = "econ-a1-economy"
+module = "Peterson.EconomicalSolutions.Algorithm13Economy"
+declarations = ["EconomicalSolutions.Algorithm1.value_card", "EconomicalSolutions.Algorithm1.ordinary_visible"]
+
+[[lean.claims]]
+record_id = "econ-a3-economy"
+module = "Peterson.EconomicalSolutions.Algorithm13Economy"
+declarations = ["EconomicalSolutions.Algorithm3.value_card", "EconomicalSolutions.Algorithm3.ordinary_visible"]
+
+[[lean.claims]]
+record_id = "econ-a2-economy"
+module = "Peterson.EconomicalSolutions.Algorithm2Economy"
+declarations = ["EconomicalSolutions.Algorithm2.alphabet_card", "EconomicalSolutions.Algorithm2.reachable_register", "EconomicalSolutions.Algorithm2.ordinary_visible"]
+
+[[lean.claims]]
+record_id = "econ-a5-economy"
+module = "Peterson.EconomicalSolutions.Algorithm5Economy"
+declarations = ["EconomicalSolutions.Algorithm5.alphabet_card_ge_two", "EconomicalSolutions.Algorithm5.alphabet_card_singleton", "EconomicalSolutions.Algorithm5.reachable_register", "EconomicalSolutions.Algorithm5.ordinary_visible"]
+
+[[lean.claims]]
+record_id = "econ-a6-economy"
+module = "Peterson.EconomicalSolutions.Algorithm6Economy"
+declarations = ["EconomicalSolutions.Algorithm6.alphabet_card_ge_two", "EconomicalSolutions.Algorithm6.alphabet_card_singleton", "EconomicalSolutions.Algorithm6.reachable_register", "EconomicalSolutions.Algorithm6.ordinary_visible"]
+
+[[lean.claims]]
+record_id = "econ-a7-economy"
+module = "Peterson.EconomicalSolutions.Algorithm7Economy"
+declarations = ["EconomicalSolutions.Algorithm7.value_card", "EconomicalSolutions.Algorithm7.ordinary_visible"]
+
+[[lean.claims]]
+record_id = "econ-erasure-diagnostic"
+module = "Peterson.EconomicalSolutions.Algorithm5Erasure"
+declarations = ["EconomicalSolutions.Algorithm5.erasure_witness", "EconomicalSolutions.Algorithm5.erasure_does_not_factor"]
+
+[[lean.claims]]
+record_id = "econ-two-state-lower-bound"
+module = "Peterson.EconomicalSolutions.TwoStateBypass"
+declarations = ["EconomicalSolutions.TwoState.Program.binary_impossibility"]
+
+[[lean.claims]]
+record_id = "econ-solo-work"
+module = "Peterson.EconomicalSolutions.Algorithm2SoloCount"
+declarations = ["EconomicalSolutions.Algorithm2.Solo.initialized_first_entry", "EconomicalSolutions.Algorithm2.Solo.initialized_lts", "EconomicalSolutions.Algorithm2.Solo.count_linear"]
