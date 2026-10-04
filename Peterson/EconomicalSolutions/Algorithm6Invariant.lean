@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm6Projection
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6Projection
+
+@[expose] public section
 
 set_option linter.unusedSimpArgs false
 set_option linter.unnecessarySimpa false

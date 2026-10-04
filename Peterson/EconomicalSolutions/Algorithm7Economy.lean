@@ -1,5 +1,9 @@
-import Peterson.EconomicalSolutions.Algorithm7
-import Mathlib.Tactic.FinCases
+module
+
+public import Peterson.EconomicalSolutions.Algorithm7
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-! The source counts the possible values of one whole visible register.
 The private clock counters, lists, and control positions are not register fields. -/

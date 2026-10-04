@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm6Invariant
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6Invariant
+
+@[expose] public section
 
 namespace EconomicalSolutions.Algorithm6
 

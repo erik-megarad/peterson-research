@@ -1,6 +1,10 @@
-import Peterson.EconomicalSolutions.Algorithm6Cohort
-import Peterson.EconomicalSolutions.Algorithm2Economy
-import Mathlib.Data.Fintype.Sum
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6Cohort
+public import Peterson.EconomicalSolutions.Algorithm2Economy
+public import Mathlib.Data.Fintype.Sum
+
+@[expose] public section
 
 set_option linter.unusedSimpArgs false
 set_option linter.unnecessarySimpa false

@@ -1,5 +1,9 @@
-import Peterson.EconomicalSolutions.Algorithm2WellFormed
-import Peterson.EconomicalSolutions.Algorithm2NodeSafety
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2WellFormed
+public import Peterson.EconomicalSolutions.Algorithm2NodeSafety
+
+@[expose] public section
 
 /-! Extract open invocation boundaries and their possible observation points
 from concrete prefixes. No completed-scan or observation-support premise is

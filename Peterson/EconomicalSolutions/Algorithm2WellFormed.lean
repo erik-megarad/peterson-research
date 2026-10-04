@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2History
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2History
+
+@[expose] public section
 
 /-! Reachable local-state facts for the unchanged Algorithm 2 interpreter.
 These facts concern real executions; no representative or scan premise is used. -/

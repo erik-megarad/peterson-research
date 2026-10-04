@@ -79,7 +79,7 @@ theorem erasure_observation :
       some (.write1 1 ⟨1, false⟩) ∧
     (ordinary cfg afterDeparture 1).map Local.tournamentPC =
       some (.scan .first 1 []) ∧
-    ordinary cfg beforeDeparture 1 ≠ ordinary cfg afterDeparture 1 := by decide
+    ordinary cfg beforeDeparture 1 ≠ ordinary cfg afterDeparture 1 := by decide +kernel
 
 theorem erasure_witness :
     ∃ s t : State 2, Reachable cfg s ∧ Reachable cfg t ∧

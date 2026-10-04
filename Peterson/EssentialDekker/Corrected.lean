@@ -1,4 +1,8 @@
-import Cslib.Foundations.Semantics.LTS.Basic
+module
+
+public import Cslib.Foundations.Semantics.LTS.Basic
+
+@[expose] public section
 
 /-! Figure 6 with the owner-selected `≥` correction. Each shared access is
 separate, count scans ascend through peers, and expressions short-circuit

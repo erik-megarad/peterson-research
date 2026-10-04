@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2NodeCertificate
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2NodeCertificate
+
+@[expose] public section
 
 /-! Retained-winner exclusion for arbitrary node traces. This is conditional
 on having a node trace; no concrete tournament simulation is asserted here. -/

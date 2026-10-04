@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm5Projection
+module
+
+public import Peterson.EconomicalSolutions.Algorithm5Projection
+
+@[expose] public section
 
 set_option linter.unusedSimpArgs false
 namespace EconomicalSolutions.Algorithm5

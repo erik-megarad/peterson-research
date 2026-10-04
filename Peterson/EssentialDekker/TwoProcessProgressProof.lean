@@ -1,4 +1,8 @@
-import Peterson.EssentialDekker.TwoProcessProgress
+module
+
+public import Peterson.EssentialDekker.TwoProcessProgress
+
+@[expose] public section
 
 namespace Peterson.EssentialDekker.TwoProcess.Progress
 

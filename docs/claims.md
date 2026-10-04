@@ -351,3 +351,13 @@ The first entry takes exactly 3*2^h+7*h-1 interpreter instructions, at most 13*n
 [Lean declaration module](../Peterson/EconomicalSolutions/Algorithm2SoloCount.lean).
 
 Initialized solo execution; every positive population and complete scan order; includes dummy reads and singleton count two. Arbitrary prior histories, other algorithms solo bounds and host runtime remain unestablished.
+
+## Round-two papers
+
+Each source-specific map lists exact modules and declarations, scope and assumptions:
+
+- [Circular election](circular-election-claims.md)
+- [Concurrent reading](concurrent-reading-claims.md)
+- [Multi-reader atomic values](multi-reader-atomic-claims.md)
+
+The shared `publication-checks.toml` and corpus records include these 16 claim records alongside the original 31. Atomicity refutations and own-completion guarantees remain separate claims.

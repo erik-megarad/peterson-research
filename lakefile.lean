@@ -6,7 +6,20 @@ package «peterson-algorithm» where
 
 require cslib from git
   "https://github.com/leanprover/cslib" @
-  "33e7370a94646c19176dc847f7514559bc5e06fb"
+  "9a99cbb320aa7742ecbbcecb8df6b404a9b587a3"
 
+@[default_target]
 lean_lib Peterson where
   globs := #[.submodules `Peterson]
+
+@[default_target]
+lean_lib CircularElection where
+  globs := #[.submodules `CircularElection]
+
+@[default_target]
+lean_lib ConcurrentReading where
+  globs := #[.submodules `ConcurrentReading]
+
+@[default_target]
+lean_lib MultiReaderAtomic where
+  globs := #[.submodules `MultiReaderAtomic]

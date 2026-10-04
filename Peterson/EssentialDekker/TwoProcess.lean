@@ -1,4 +1,8 @@
-import Cslib.Foundations.Semantics.LTS.Basic
+module
+
+public import Cslib.Foundations.Semantics.LTS.Basic
+
+@[expose] public section
 
 /-! Figure 4 of Peterson's Essential Dekker, page 3. Sequential consistency;
 each shared access is a separate transition. Local assignment results live in

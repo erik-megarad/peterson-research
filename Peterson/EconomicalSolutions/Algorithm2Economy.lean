@@ -1,7 +1,11 @@
-import Peterson.EconomicalSolutions.Algorithm2WellFormed
-import Mathlib.Tactic.FinCases
-import Mathlib.Data.Fintype.Option
-import Mathlib.Data.Fintype.Prod
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2WellFormed
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Data.Fintype.Option
+public import Mathlib.Data.Fintype.Prod
+
+@[expose] public section
 
 /-! The finite covering alphabet of Algorithm 2's one visible register. The
 raw `Value` and the interpreter remain unchanged. -/

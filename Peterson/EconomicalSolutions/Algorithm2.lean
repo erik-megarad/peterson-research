@@ -1,6 +1,10 @@
-import Cslib.Foundations.Semantics.LTS.Basic
-import Mathlib.Data.Nat.Log
-import Peterson.EconomicalSolutions.Algorithm2ScanBridge
+module
+
+public import Cslib.Foundations.Semantics.LTS.Basic
+public import Mathlib.Data.Nat.Log
+public import Peterson.EconomicalSolutions.Algorithm2ScanBridge
+
+@[expose] public section
 
 /-! Algorithm 2's source-close interpreter. Every shared access is a separate
 step. The arbitrary fixed enumeration is configuration, never a scheduler

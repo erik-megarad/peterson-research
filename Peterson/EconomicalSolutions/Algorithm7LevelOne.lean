@@ -1,6 +1,10 @@
-import Peterson.EconomicalSolutions.Algorithm7
-import Mathlib.Data.Fin.VecNotation
-import Mathlib.Tactic.FinCases
+module
+
+public import Peterson.EconomicalSolutions.Algorithm7
+public import Mathlib.Data.Fin.VecNotation
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-! An affine-counter certificate for original Algorithm 7 level-one starvation.
 The explicit states are untrusted data. Every edge is reduced in the Lean kernel.

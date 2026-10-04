@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2Observations
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2Observations
+
+@[expose] public section
 
 namespace EconomicalSolutions.Algorithm2
 

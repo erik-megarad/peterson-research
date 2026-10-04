@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2Refinement
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2Refinement
+
+@[expose] public section
 
 /-! The reviewed explicit queue. Priorities are unrestricted integers in the
 interpreter; their range and uniqueness are proof obligations, not guards. -/

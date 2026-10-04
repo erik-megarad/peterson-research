@@ -1,7 +1,11 @@
-import Peterson.EconomicalSolutions.Algorithm5Invariant
-import Peterson.EconomicalSolutions.Algorithm2Economy
-import Mathlib.Data.Fintype.Prod
-import Mathlib.Data.Fintype.Sum
+module
+
+public import Peterson.EconomicalSolutions.Algorithm5Invariant
+public import Peterson.EconomicalSolutions.Algorithm2Economy
+public import Mathlib.Data.Fintype.Prod
+public import Mathlib.Data.Fintype.Sum
+
+@[expose] public section
 
 set_option linter.unnecessarySimpa false
 set_option linter.deprecated false

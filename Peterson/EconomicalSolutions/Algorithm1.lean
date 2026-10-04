@@ -1,4 +1,8 @@
-import Cslib.Foundations.Semantics.LTS.Basic
+module
+
+public import Cslib.Foundations.Semantics.LTS.Basic
+
+@[expose] public section
 
 /-! Peterson–Fischer, Economical Solutions, Algorithm 1 (restoration p. 3).
 The collection’s economical-solutions guide describes the reviewed operation boundary.

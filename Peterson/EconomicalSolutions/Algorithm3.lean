@@ -1,4 +1,8 @@
-import Cslib.Foundations.Semantics.LTS.Basic
+module
+
+public import Cslib.Foundations.Semantics.LTS.Basic
+
+@[expose] public section
 
 /-! Algorithm 3, complete proceedings listing (printed pp. 93–94).
 The collection’s economical-solutions guide explains the selected proceedings version.

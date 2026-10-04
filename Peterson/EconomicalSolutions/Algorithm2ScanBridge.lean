@@ -1,4 +1,8 @@
-import Std.Tactic
+module
+
+public import Std.Tactic
+
+@[expose] public section
 
 /-! Historical QMAX bridge for Algorithm 2, not a tournament safety theorem.
 Uniqueness below is a proof obligation on an execution, never a restriction on

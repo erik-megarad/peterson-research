@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm6History
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6History
+
+@[expose] public section
 
 /-! Finite upper joining under the frozen instruction-or-failure scheduling.
 This does not assert successful ticking or tournament completion. -/

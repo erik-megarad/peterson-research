@@ -1,5 +1,9 @@
-import Peterson.EssentialDekker.TwoProcessProgressProof
-import Mathlib.Tactic.IntervalCases
+module
+
+public import Peterson.EssentialDekker.TwoProcessProgressProof
+public import Mathlib.Tactic.IntervalCases
+
+@[expose] public section
 
 /-! Explicit Figure 4 witnesses: a clearing stem, any number of completed peer
 passages, the requester's completion, then idle stuttering. -/

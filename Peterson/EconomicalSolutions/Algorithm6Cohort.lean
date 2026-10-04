@@ -1,5 +1,9 @@
-import Peterson.EconomicalSolutions.Algorithm6Joining
-import Peterson.EconomicalSolutions.Algorithm6Observation
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6Joining
+public import Peterson.EconomicalSolutions.Algorithm6Observation
+
+@[expose] public section
 
 /-! Concrete occupied-cohort reduction during retained Algorithm 6 admission.
 No successful ticking, completion, or eventual peer stability is assumed. -/

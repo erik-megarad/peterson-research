@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2
+
+@[expose] public section
 
 /-! A local competition abstraction, not a second semantics for Algorithm 2.
 A sample action names its historical observation point. Proving that concrete

@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2Foundation
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2Foundation
+
+@[expose] public section
 
 /-! Ordered read histories for one concrete Algorithm 2 QMAX invocation.
 

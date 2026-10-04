@@ -1,8 +1,8 @@
 schema_version = 1
 
 [lean]
-build_modules = ["Peterson.EconomicalSolutions.Algorithm13Economy", "Peterson.EconomicalSolutions.Algorithm1Progress", "Peterson.EconomicalSolutions.Algorithm1Safety", "Peterson.EconomicalSolutions.Algorithm2Economy", "Peterson.EconomicalSolutions.Algorithm2Progress", "Peterson.EconomicalSolutions.Algorithm2Refinement", "Peterson.EconomicalSolutions.Algorithm2SoloCount", "Peterson.EconomicalSolutions.Algorithm3Counterexample", "Peterson.EconomicalSolutions.Algorithm5Doorway", "Peterson.EconomicalSolutions.Algorithm5Economy", "Peterson.EconomicalSolutions.Algorithm5Erasure", "Peterson.EconomicalSolutions.Algorithm5FIFO", "Peterson.EconomicalSolutions.Algorithm5Invariant", "Peterson.EconomicalSolutions.Algorithm5Progress", "Peterson.EconomicalSolutions.Algorithm6Doorway", "Peterson.EconomicalSolutions.Algorithm6Economy", "Peterson.EconomicalSolutions.Algorithm6History", "Peterson.EconomicalSolutions.Algorithm6Invariant", "Peterson.EconomicalSolutions.Algorithm6Predecessor", "Peterson.EconomicalSolutions.Algorithm7Counterexample", "Peterson.EconomicalSolutions.Algorithm7Economy", "Peterson.EconomicalSolutions.Algorithm7LevelOne", "Peterson.EconomicalSolutions.Algorithm7Prepublication", "Peterson.EconomicalSolutions.TwoStateBypass", "Peterson.EssentialDekker.CorrectedSafety", "Peterson.EssentialDekker.LiteralObstruction", "Peterson.EssentialDekker.Starvation", "Peterson.EssentialDekker.TwoProcess", "Peterson.EssentialDekker.TwoProcessOvertaking", "Peterson.EssentialDekker.TwoProcessProgressProof"]
-source_paths = ["lakefile.lean", "Peterson/EconomicalSolutions/Algorithm1.lean", "Peterson/EconomicalSolutions/Algorithm13Economy.lean", "Peterson/EconomicalSolutions/Algorithm1Certificate.lean", "Peterson/EconomicalSolutions/Algorithm1Progress.lean", "Peterson/EconomicalSolutions/Algorithm1ProgressCertificate.lean", "Peterson/EconomicalSolutions/Algorithm1ProgressDefs.lean", "Peterson/EconomicalSolutions/Algorithm1Safety.lean", "Peterson/EconomicalSolutions/Algorithm2.lean", "Peterson/EconomicalSolutions/Algorithm2Economy.lean", "Peterson/EconomicalSolutions/Algorithm2Foundation.lean", "Peterson/EconomicalSolutions/Algorithm2History.lean", "Peterson/EconomicalSolutions/Algorithm2Node.lean", "Peterson/EconomicalSolutions/Algorithm2NodeCertificate.lean", "Peterson/EconomicalSolutions/Algorithm2NodeSafety.lean", "Peterson/EconomicalSolutions/Algorithm2Observations.lean", "Peterson/EconomicalSolutions/Algorithm2Progress.lean", "Peterson/EconomicalSolutions/Algorithm2Refinement.lean", "Peterson/EconomicalSolutions/Algorithm2ScanBridge.lean", "Peterson/EconomicalSolutions/Algorithm2Solo.lean", "Peterson/EconomicalSolutions/Algorithm2SoloCount.lean", "Peterson/EconomicalSolutions/Algorithm2Tree.lean", "Peterson/EconomicalSolutions/Algorithm2WellFormed.lean", "Peterson/EconomicalSolutions/Algorithm3.lean", "Peterson/EconomicalSolutions/Algorithm3Certificate.lean", "Peterson/EconomicalSolutions/Algorithm3Counterexample.lean", "Peterson/EconomicalSolutions/Algorithm5.lean", "Peterson/EconomicalSolutions/Algorithm5Capacity.lean", "Peterson/EconomicalSolutions/Algorithm5Doorway.lean", "Peterson/EconomicalSolutions/Algorithm5Economy.lean", "Peterson/EconomicalSolutions/Algorithm5Erasure.lean", "Peterson/EconomicalSolutions/Algorithm5FIFO.lean", "Peterson/EconomicalSolutions/Algorithm5Invariant.lean", "Peterson/EconomicalSolutions/Algorithm5Progress.lean", "Peterson/EconomicalSolutions/Algorithm5Projection.lean", "Peterson/EconomicalSolutions/Algorithm5Sanity.lean", "Peterson/EconomicalSolutions/Algorithm6.lean", "Peterson/EconomicalSolutions/Algorithm6Cohort.lean", "Peterson/EconomicalSolutions/Algorithm6Completion.lean", "Peterson/EconomicalSolutions/Algorithm6Doorway.lean", "Peterson/EconomicalSolutions/Algorithm6Economy.lean", "Peterson/EconomicalSolutions/Algorithm6History.lean", "Peterson/EconomicalSolutions/Algorithm6Invariant.lean", "Peterson/EconomicalSolutions/Algorithm6Joining.lean", "Peterson/EconomicalSolutions/Algorithm6LowerRound.lean", "Peterson/EconomicalSolutions/Algorithm6Observation.lean", "Peterson/EconomicalSolutions/Algorithm6Predecessor.lean", "Peterson/EconomicalSolutions/Algorithm6Progress.lean", "Peterson/EconomicalSolutions/Algorithm6Projection.lean", "Peterson/EconomicalSolutions/Algorithm6Ticking.lean", "Peterson/EconomicalSolutions/Algorithm7.lean", "Peterson/EconomicalSolutions/Algorithm7BuildHistory.lean", "Peterson/EconomicalSolutions/Algorithm7Certificate.lean", "Peterson/EconomicalSolutions/Algorithm7ClockCredit.lean", "Peterson/EconomicalSolutions/Algorithm7Counterexample.lean", "Peterson/EconomicalSolutions/Algorithm7CreditHistory.lean", "Peterson/EconomicalSolutions/Algorithm7Economy.lean", "Peterson/EconomicalSolutions/Algorithm7Episode.lean", "Peterson/EconomicalSolutions/Algorithm7History.lean", "Peterson/EconomicalSolutions/Algorithm7LevelOne.lean", "Peterson/EconomicalSolutions/Algorithm7Prepublication.lean", "Peterson/EconomicalSolutions/Algorithm7Replay.lean", "Peterson/EconomicalSolutions/Algorithm7Safety.lean", "Peterson/EconomicalSolutions/TwoStateBypass.lean", "Peterson/EconomicalSolutions/TwoStateNecessary.lean", "Peterson/EconomicalSolutions/TwoStateScheduling.lean", "Peterson/EssentialDekker/Corrected.lean", "Peterson/EssentialDekker/CorrectedSafety.lean", "Peterson/EssentialDekker/LiteralObstruction.lean", "Peterson/EssentialDekker/Starvation.lean", "Peterson/EssentialDekker/TwoProcess.lean", "Peterson/EssentialDekker/TwoProcessOvertaking.lean", "Peterson/EssentialDekker/TwoProcessProgress.lean", "Peterson/EssentialDekker/TwoProcessProgressProof.lean"]
+build_modules = ["CircularElection.Complexity", "CircularElection.Maximum", "CircularElection.Origin", "CircularElection.Progress", "CircularElection.Safety", "CircularElection.Traces", "ConcurrentReading.Completion", "ConcurrentReading.Integrity", "ConcurrentReading.Linearization", "ConcurrentReading.OrderHistory", "MultiReaderAtomic.CausalTrace", "MultiReaderAtomic.Completion", "MultiReaderAtomic.Counterexample", "MultiReaderAtomic.Origin", "MultiReaderAtomic.RestrictedCounterexample", "Peterson.EconomicalSolutions.Algorithm13Economy", "Peterson.EconomicalSolutions.Algorithm1Progress", "Peterson.EconomicalSolutions.Algorithm1Safety", "Peterson.EconomicalSolutions.Algorithm2Economy", "Peterson.EconomicalSolutions.Algorithm2Progress", "Peterson.EconomicalSolutions.Algorithm2Refinement", "Peterson.EconomicalSolutions.Algorithm2SoloCount", "Peterson.EconomicalSolutions.Algorithm3Counterexample", "Peterson.EconomicalSolutions.Algorithm5Doorway", "Peterson.EconomicalSolutions.Algorithm5Economy", "Peterson.EconomicalSolutions.Algorithm5Erasure", "Peterson.EconomicalSolutions.Algorithm5FIFO", "Peterson.EconomicalSolutions.Algorithm5Invariant", "Peterson.EconomicalSolutions.Algorithm5Progress", "Peterson.EconomicalSolutions.Algorithm6Doorway", "Peterson.EconomicalSolutions.Algorithm6Economy", "Peterson.EconomicalSolutions.Algorithm6History", "Peterson.EconomicalSolutions.Algorithm6Invariant", "Peterson.EconomicalSolutions.Algorithm6Predecessor", "Peterson.EconomicalSolutions.Algorithm7Counterexample", "Peterson.EconomicalSolutions.Algorithm7Economy", "Peterson.EconomicalSolutions.Algorithm7LevelOne", "Peterson.EconomicalSolutions.Algorithm7Prepublication", "Peterson.EconomicalSolutions.TwoStateBypass", "Peterson.EssentialDekker.CorrectedSafety", "Peterson.EssentialDekker.LiteralObstruction", "Peterson.EssentialDekker.Starvation", "Peterson.EssentialDekker.TwoProcess", "Peterson.EssentialDekker.TwoProcessOvertaking", "Peterson.EssentialDekker.TwoProcessProgressProof"]
+source_paths = ["CircularElection/Complexity.lean", "CircularElection/CycleSubset.lean", "CircularElection/Frontier.lean", "CircularElection/History.lean", "CircularElection/IdealRound.lean", "CircularElection/Maximum.lean", "CircularElection/Model.lean", "CircularElection/Origin.lean", "CircularElection/Plan.lean", "CircularElection/Progress.lean", "CircularElection/Safety.lean", "CircularElection/Targets.lean", "CircularElection/Traces.lean", "ConcurrentReading/BufferFacts.lean", "ConcurrentReading/Completion.lean", "ConcurrentReading/Control.lean", "ConcurrentReading/Handshake.lean", "ConcurrentReading/HistoryShape.lean", "ConcurrentReading/Integrity.lean", "ConcurrentReading/Linearization.lean", "ConcurrentReading/Model.lean", "ConcurrentReading/OrderBounds.lean", "ConcurrentReading/OrderHistory.lean", "ConcurrentReading/Provenance.lean", "ConcurrentReading/SampleSafety.lean", "ConcurrentReading/SampleSafetyBase.lean", "ConcurrentReading/Targets.lean", "ConcurrentReading/Traces.lean", "MultiReaderAtomic/CausalTrace.lean", "MultiReaderAtomic/Completion.lean", "MultiReaderAtomic/Counterexample.lean", "MultiReaderAtomic/Examples.lean", "MultiReaderAtomic/Execution.lean", "MultiReaderAtomic/Model.lean", "MultiReaderAtomic/Origin.lean", "MultiReaderAtomic/Protocol.lean", "MultiReaderAtomic/Restricted.lean", "MultiReaderAtomic/RestrictedCounterexample.lean", "MultiReaderAtomic/Targets.lean", "MultiReaderAtomic/Trace.lean", "Peterson/EconomicalSolutions/Algorithm1.lean", "Peterson/EconomicalSolutions/Algorithm13Economy.lean", "Peterson/EconomicalSolutions/Algorithm1Certificate.lean", "Peterson/EconomicalSolutions/Algorithm1Progress.lean", "Peterson/EconomicalSolutions/Algorithm1ProgressCertificate.lean", "Peterson/EconomicalSolutions/Algorithm1ProgressDefs.lean", "Peterson/EconomicalSolutions/Algorithm1Safety.lean", "Peterson/EconomicalSolutions/Algorithm2.lean", "Peterson/EconomicalSolutions/Algorithm2Economy.lean", "Peterson/EconomicalSolutions/Algorithm2Foundation.lean", "Peterson/EconomicalSolutions/Algorithm2History.lean", "Peterson/EconomicalSolutions/Algorithm2Node.lean", "Peterson/EconomicalSolutions/Algorithm2NodeCertificate.lean", "Peterson/EconomicalSolutions/Algorithm2NodeSafety.lean", "Peterson/EconomicalSolutions/Algorithm2Observations.lean", "Peterson/EconomicalSolutions/Algorithm2Progress.lean", "Peterson/EconomicalSolutions/Algorithm2Refinement.lean", "Peterson/EconomicalSolutions/Algorithm2ScanBridge.lean", "Peterson/EconomicalSolutions/Algorithm2Solo.lean", "Peterson/EconomicalSolutions/Algorithm2SoloCount.lean", "Peterson/EconomicalSolutions/Algorithm2Tree.lean", "Peterson/EconomicalSolutions/Algorithm2WellFormed.lean", "Peterson/EconomicalSolutions/Algorithm3.lean", "Peterson/EconomicalSolutions/Algorithm3Certificate.lean", "Peterson/EconomicalSolutions/Algorithm3Counterexample.lean", "Peterson/EconomicalSolutions/Algorithm5.lean", "Peterson/EconomicalSolutions/Algorithm5Capacity.lean", "Peterson/EconomicalSolutions/Algorithm5Doorway.lean", "Peterson/EconomicalSolutions/Algorithm5Economy.lean", "Peterson/EconomicalSolutions/Algorithm5Erasure.lean", "Peterson/EconomicalSolutions/Algorithm5FIFO.lean", "Peterson/EconomicalSolutions/Algorithm5Invariant.lean", "Peterson/EconomicalSolutions/Algorithm5Progress.lean", "Peterson/EconomicalSolutions/Algorithm5Projection.lean", "Peterson/EconomicalSolutions/Algorithm5Sanity.lean", "Peterson/EconomicalSolutions/Algorithm6.lean", "Peterson/EconomicalSolutions/Algorithm6Cohort.lean", "Peterson/EconomicalSolutions/Algorithm6Completion.lean", "Peterson/EconomicalSolutions/Algorithm6Doorway.lean", "Peterson/EconomicalSolutions/Algorithm6Economy.lean", "Peterson/EconomicalSolutions/Algorithm6History.lean", "Peterson/EconomicalSolutions/Algorithm6Invariant.lean", "Peterson/EconomicalSolutions/Algorithm6Joining.lean", "Peterson/EconomicalSolutions/Algorithm6LowerRound.lean", "Peterson/EconomicalSolutions/Algorithm6Observation.lean", "Peterson/EconomicalSolutions/Algorithm6Predecessor.lean", "Peterson/EconomicalSolutions/Algorithm6Progress.lean", "Peterson/EconomicalSolutions/Algorithm6Projection.lean", "Peterson/EconomicalSolutions/Algorithm6Ticking.lean", "Peterson/EconomicalSolutions/Algorithm7.lean", "Peterson/EconomicalSolutions/Algorithm7BuildHistory.lean", "Peterson/EconomicalSolutions/Algorithm7Certificate.lean", "Peterson/EconomicalSolutions/Algorithm7ClockCredit.lean", "Peterson/EconomicalSolutions/Algorithm7Counterexample.lean", "Peterson/EconomicalSolutions/Algorithm7CreditHistory.lean", "Peterson/EconomicalSolutions/Algorithm7Economy.lean", "Peterson/EconomicalSolutions/Algorithm7Episode.lean", "Peterson/EconomicalSolutions/Algorithm7History.lean", "Peterson/EconomicalSolutions/Algorithm7LevelOne.lean", "Peterson/EconomicalSolutions/Algorithm7Prepublication.lean", "Peterson/EconomicalSolutions/Algorithm7Replay.lean", "Peterson/EconomicalSolutions/Algorithm7Safety.lean", "Peterson/EconomicalSolutions/TwoStateBypass.lean", "Peterson/EconomicalSolutions/TwoStateNecessary.lean", "Peterson/EconomicalSolutions/TwoStateScheduling.lean", "Peterson/EssentialDekker/Corrected.lean", "Peterson/EssentialDekker/CorrectedSafety.lean", "Peterson/EssentialDekker/LiteralObstruction.lean", "Peterson/EssentialDekker/Starvation.lean", "Peterson/EssentialDekker/TwoProcess.lean", "Peterson/EssentialDekker/TwoProcessOvertaking.lean", "Peterson/EssentialDekker/TwoProcessProgress.lean", "Peterson/EssentialDekker/TwoProcessProgressProof.lean", "lakefile.lean"]
 
 [[lean.claims]]
 record_id = "dekker-two-safety"
@@ -158,3 +158,83 @@ declarations = ["EconomicalSolutions.TwoState.Program.binary_impossibility"]
 record_id = "econ-solo-work"
 module = "Peterson.EconomicalSolutions.Algorithm2SoloCount"
 declarations = ["EconomicalSolutions.Algorithm2.Solo.initialized_first_entry", "EconomicalSolutions.Algorithm2.Solo.initialized_lts", "EconomicalSolutions.Algorithm2.Solo.count_linear"]
+
+[[lean.claims]]
+record_id = "circular-election-origin"
+module = "CircularElection.Origin"
+declarations = ["CircularElection.identifier_origin"]
+
+[[lean.claims]]
+record_id = "circular-election-maximum"
+module = "CircularElection.Maximum"
+declarations = ["CircularElection.maximum_live", "CircularElection.live_maximum_exists"]
+
+[[lean.claims]]
+record_id = "circular-election-safety"
+module = "CircularElection.Safety"
+declarations = ["CircularElection.election_safety", "CircularElection.reachable_announcer_maximum"]
+
+[[lean.claims]]
+record_id = "circular-election-progress"
+module = "CircularElection.Progress"
+declarations = ["CircularElection.eventual_election", "CircularElection.correct_election"]
+
+[[lean.claims]]
+record_id = "circular-election-complexity"
+module = "CircularElection.Complexity"
+declarations = ["CircularElection.message_complexity"]
+
+[[lean.claims]]
+record_id = "circular-election-traces"
+module = "CircularElection.Traces"
+declarations = ["CircularElection.one_process_trace", "CircularElection.two_process_four_send_trace", "CircularElection.two_process_five_send_trace"]
+
+[[lean.claims]]
+record_id = "concurrent-reading-integrity"
+module = "ConcurrentReading.Integrity"
+declarations = ["ConcurrentReading.integrity"]
+
+[[lean.claims]]
+record_id = "concurrent-reading-source-order"
+module = "ConcurrentReading.OrderHistory"
+declarations = ["ConcurrentReading.source_order"]
+
+[[lean.claims]]
+record_id = "concurrent-reading-common-order"
+module = "ConcurrentReading.Linearization"
+declarations = ["ConcurrentReading.common_ordering"]
+
+[[lean.claims]]
+record_id = "concurrent-reading-own-work"
+module = "ConcurrentReading.Completion"
+declarations = ["ConcurrentReading.own_completion"]
+
+[[lean.claims]]
+record_id = "concurrent-reading-eventual-completion"
+module = "ConcurrentReading.Completion"
+declarations = ["ConcurrentReading.eventual_own_completion"]
+
+[[lean.claims]]
+record_id = "multi-reader-atomic-original-refutation"
+module = "MultiReaderAtomic.Counterexample"
+declarations = ["MultiReaderAtomic.reverseOrder_not_finiteCorrectness", "MultiReaderAtomic.reverseOrder_not_indexedCriterion", "MultiReaderAtomic.reverseOrder_not_sourceCriterion"]
+
+[[lean.claims]]
+record_id = "multi-reader-atomic-restricted-refutation"
+module = "MultiReaderAtomic.RestrictedCounterexample"
+declarations = ["MultiReaderAtomic.regularFc_not_restrictedFiniteCorrectness", "MultiReaderAtomic.regularFc_not_indexedCriterion", "MultiReaderAtomic.regularFc_not_sourceCriterion"]
+
+[[lean.claims]]
+record_id = "multi-reader-atomic-api-origin"
+module = "MultiReaderAtomic.Origin"
+declarations = ["MultiReaderAtomic.api_provenance_reachable"]
+
+[[lean.claims]]
+record_id = "multi-reader-atomic-completion"
+module = "MultiReaderAtomic.Completion"
+declarations = ["MultiReaderAtomic.ownCompletion", "MultiReaderAtomic.restrictedOwnCompletion"]
+
+[[lean.claims]]
+record_id = "multi-reader-atomic-replay"
+module = "MultiReaderAtomic.CausalTrace"
+declarations = ["MultiReaderAtomic.response_causalReplay"]

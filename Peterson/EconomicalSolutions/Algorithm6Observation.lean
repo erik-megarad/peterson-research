@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm6History
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6History
+
+@[expose] public section
 
 set_option linter.unusedSimpArgs false
 set_option linter.unnecessarySimpa false

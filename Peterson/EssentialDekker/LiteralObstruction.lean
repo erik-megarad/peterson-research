@@ -1,4 +1,8 @@
-import Mathlib.Data.List.Count
+module
+
+public import Mathlib.Data.List.Count
+
+@[expose] public section
 
 /-! Arithmetic obstruction in the retained Figure 6, which prints `≤`.
 `observations` contains the separately read peer values from one completed

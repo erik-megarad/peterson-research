@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm6
+module
+
+public import Peterson.EconomicalSolutions.Algorithm6
+
+@[expose] public section
 
 set_option linter.unusedSimpArgs false
 

@@ -1,5 +1,9 @@
-import Peterson.EssentialDekker.Corrected
-import Mathlib.Data.Fin.VecNotation
+module
+
+public import Peterson.EssentialDekker.Corrected
+public import Mathlib.Data.Fin.VecNotation
+
+@[expose] public section
 
 /-! Concrete states are a generated certificate, checked against `next` below.
 No correctness claim relies on the generating Python program. -/

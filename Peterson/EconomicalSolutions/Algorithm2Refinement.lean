@@ -1,4 +1,8 @@
-import Peterson.EconomicalSolutions.Algorithm2Tree
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2Tree
+
+@[expose] public section
 
 namespace EconomicalSolutions.Algorithm2
 

@@ -1,5 +1,9 @@
-import Peterson.EconomicalSolutions.Algorithm3
-import Mathlib.Data.Finset.Basic
+module
+
+public import Peterson.EconomicalSolutions.Algorithm3
+public import Mathlib.Data.Finset.Basic
+
+@[expose] public section
 
 /-! Reviewed Algorithm 7 reconstruction: two reversed proceedings clocks,
 one owner-written whole register, and separate list/prefix/eligibility operations.

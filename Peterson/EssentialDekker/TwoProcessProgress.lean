@@ -1,5 +1,9 @@
-import Peterson.EssentialDekker.TwoProcess
-import Mathlib.Data.Nat.Find
+module
+
+public import Peterson.EssentialDekker.TwoProcess
+public import Mathlib.Data.Nat.Find
+
+@[expose] public section
 
 /-! Figure 4 per-request progress. A finite certificate is checked by the kernel;
 the infinite-execution proof uses only scheduling fairness and critical completion. -/

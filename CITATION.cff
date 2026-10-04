@@ -7,9 +7,9 @@
       "name": "Erik Peterson"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "type": "software",
-  "abstract": "A growing collection of model-generated Lean formalizations and reconstructions of Gary L. Peterson’s research. The first two papers are The Essential Dekker’s Algorithm and Peterson–Fischer’s Economical Solutions for the Critical Section Problem in a Distributed System. Source-specific guides explain checked results, counterexamples, assumptions and unestablished claims.",
+  "abstract": "A growing five-paper collection of model-generated Lean formalizations and reconstructions of Gary L. Peterson’s research, with Michael J. Fischer and James E. Burns on their respective papers. Guides distinguish checked positive results, counterexamples, assumptions and unestablished claims. The multi-reader regular-register construction has negative atomicity results and separate positive own-completion proofs.",
   "repository-code": "https://github.com/erik-megarad/peterson-research"
 }

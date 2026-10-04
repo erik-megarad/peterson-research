@@ -1,6 +1,10 @@
-import Peterson.EconomicalSolutions.Algorithm1
-import Peterson.EconomicalSolutions.Algorithm3
-import Mathlib.Tactic.FinCases
+module
+
+public import Peterson.EconomicalSolutions.Algorithm1
+public import Peterson.EconomicalSolutions.Algorithm3
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-! Exact visible-register alphabets for the frozen Algorithms 1 and 3.
 The program counters and cached payloads remain private fields of `Local`. -/

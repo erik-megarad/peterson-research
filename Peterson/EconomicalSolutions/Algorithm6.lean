@@ -1,6 +1,10 @@
-import Peterson.EconomicalSolutions.Algorithm2Refinement
-import Peterson.EconomicalSolutions.Algorithm3
-import Mathlib.Data.Finset.Basic
+module
+
+public import Peterson.EconomicalSolutions.Algorithm2Refinement
+public import Peterson.EconomicalSolutions.Algorithm3
+public import Mathlib.Data.Finset.Basic
+
+@[expose] public section
 
 /-! Algorithm 6's reviewed product-register implementation. The operational
 choices are frozen in economical-solutions-implicit-queue-target.md. Clock
